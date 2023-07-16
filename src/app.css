@@ -7,10 +7,11 @@
 /* heading: Orbitron */
 /* text: Poppins */
 
-.app-bg{
+body{
     background: rgb(18,14,11);
 background: linear-gradient(90deg, rgba(18,14,11,1) 50%, rgba(50,35,28,1) 100%);
 }
+
 
 .heading{
     font-family: orbitron;

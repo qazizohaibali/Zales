@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
         </nav>
     </div>
-    <div className="mobile-nav lg:hidden text-white px-3 ">
+    <div className="mobile-nav lg:hidden text-white px-3">
       <nav className=" text-white  rounded-3xl">
         <div className="bg-[#262626] flex justify-between  px-4 py-5 items-center rounded-3xl">
         <h3>ZALES</h3>

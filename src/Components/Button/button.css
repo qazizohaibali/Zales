@@ -1,7 +1,7 @@
 .pri-btn-style:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
+    background-color: white !important;
+    color: black !important;
+    cursor: pointer !important;
 
     
 }
@@ -11,10 +11,10 @@
 .sec-btn-style:hover{
     /* background-color: white; */
 /* opacity: 0.5; */
-    color:white;
+    color:white !important;
     /* border: 1px solid white; */
-    cursor: pointer;
-    background-color: #444242;
+    cursor: pointer !important;
+    background-color: #444242 !important;
 }
 .sec-btn-style{
     color:black;

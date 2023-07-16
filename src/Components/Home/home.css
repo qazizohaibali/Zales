@@ -8,11 +8,11 @@
 progress {
     -webkit-appearance:none;
     /* width:%; */
-    height:5px;
+    height:8px;
     /* border:1px solid #ccc; */
     overflow:hidden;
     color:#aaa;
-    border-radius:15px;
+    border-radius:25px;
 
     &::-webkit-progress-bar {
         background:#291307;
@@ -21,6 +21,24 @@ progress {
         background:#ffffff;
     }
     &::-moz-progress-bar {
-        background:#095dd3;
+        background:#291307;
     }
 }
+
+    @media only screen and (max-width: 320px) {
+        .progress-bar{
+              margin-right: -64px !important;  
+        }
+      }
+
+     @media only screen and (min-width: 376px) and (max-width: 425px) {
+        .progress-bar{
+              margin-right: -135px !important;  
+        }
+      } 
+
+      @media only screen and (min-width: 325px) and (max-width: 375px) {
+        .progress-bar{
+              margin-right: -70px !important;  
+        }
+      }
