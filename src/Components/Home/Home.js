@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import SubHome from '../SubHero/SubHero.js'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
+
+
 import pic1 from "../../Assets/pic1.jpg";
 import pic2 from "../../Assets/pic2.jpg";
 import pic3 from "../../Assets/pic3.jpg";
@@ -12,8 +15,10 @@ import pic5 from "../../Assets/pic5.jpg";
 import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
 
-import left from "../../Assets/icons/left-arrow.svg";
-import right from "../../Assets/icons/right-arow.svg";
+// import left from "../../Assets/icons/left-arrow.svg";
+// import right from "../../Assets/icons/right-arow.svg";
+
+import arrowicon from '../../Assets/icons/L-Next-Arrow.svg'
 
 export default function Home() {
   const homeData = [
@@ -48,9 +53,9 @@ export default function Home() {
     return (
       <button
         onClick={onClick}
-        className="absolute bottom-[20px] lg:bottom-[130px] z-[1000] icon_border right-[53%] lg:right-[11%] "
+        className="absolute bottom-[20px] lg:bottom-[80px] px-2 rotate-180 z-[1000] icon_border right-[53%] lg:right-[11%] "
       >
-        <Icon iconHeight={40} iconWidth={40} icon={left} />
+        <Icon iconHeight={40} iconWidth={40} icon={arrowicon} />
       </button>
     );
   };
@@ -60,9 +65,9 @@ export default function Home() {
     return (
       <button
         onClick={onClick}
-        className="absolute bottom-[20px] lg:bottom-[130px] icon_border z-[1000] left-[53%] lg:left-[90%] "
+        className="absolute bottom-[20px] lg:bottom-[80px] px-2 icon_border z-[1000] left-[53%] lg:left-[90%] "
       >
-        <Icon iconWidth="100px" iconHeight="70px" icon={right} />
+        <Icon iconWidth="100px" iconHeight="70px" icon={arrowicon} />
       </button>
     );
   };
@@ -83,7 +88,7 @@ export default function Home() {
 
   return (
     <div className="">
-      <div className="Home-Component mt-3 mx-3 ">
+      <div className="Home-Component mt-3 lg:mx-0 mx-3 ">
         <Slider {...settings}>
           {homeData.map(({ img, text, heading, barValue }, index) => {
             return (
@@ -93,7 +98,7 @@ export default function Home() {
                   alt=""
                   className="h-[650px] grayscale-[30%] lg:max-h-[720px] object-cover w-full rounded-3xl "
                 />
-                <div className="absolute top-[150px] lg:top-[200px] lg:pl-[80px]">
+                <div className="absolute top-[150px] lg:top-[170px] lg:pl-[80px]">
                   <div className="">
                     <h1 className="text py-[10px] opacity-70 text-white text-[16px] lg:text-[20px] lg:px-0 px-2 max-w-[280px] lg:max-w-[550px]">
                       {text}
@@ -129,6 +134,7 @@ export default function Home() {
           })}
         </Slider>
       </div>
+       <SubHome/>
     </div>
   );
 }
