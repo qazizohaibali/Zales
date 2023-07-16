@@ -1,0 +1,26 @@
+/* .arrow{
+    border: 1px solid white; 
+}
+.arrow:hover{
+    padding: 0px 15px;
+} */
+
+progress {
+    -webkit-appearance:none;
+    /* width:%; */
+    height:5px;
+    /* border:1px solid #ccc; */
+    overflow:hidden;
+    color:#aaa;
+    border-radius:15px;
+
+    &::-webkit-progress-bar {
+        background:#291307;
+    }
+    &::-webkit-progress-value {
+        background:#ffffff;
+    }
+    &::-moz-progress-bar {
+        background:#095dd3;
+    }
+}

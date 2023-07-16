@@ -1,0 +1,22 @@
+.pri-btn-style:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+    
+}
+.pri-btn-style{
+    border: 1px solid rgb(255, 255, 255);
+}
+.sec-btn-style:hover{
+    /* background-color: white; */
+/* opacity: 0.5; */
+    color:white;
+    /* border: 1px solid white; */
+    cursor: pointer;
+    background-color: #444242;
+}
+.sec-btn-style{
+    color:black;
+    background-color: white;
+}

@@ -1,0 +1,9 @@
+.icon_border{
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.icon_border:hover{
+    padding-left:5px;
+    padding-right:5px;
+}

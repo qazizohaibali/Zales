@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from "./Button/Button";
 import {FiSearch} from 'react-icons/fi'
 import {TbMenu2} from 'react-icons/tb'
 import './navbar.css'
@@ -19,7 +19,7 @@ export default function Navbar() {
   }
 
   return (<>
-    <div className="max-w-[1140px] mx-auto hidden lg:block desktop-nav">
+    <div className="max-w-[1400px] mx-auto px-3 hidden lg:block desktop-nav">
         <nav className="flex justify-between rounded-full bg-[#262626] text-white py-2 px-5 my-nav">
           <div className="flex gap-[80px] items-center">
             <div>
@@ -38,8 +38,8 @@ export default function Navbar() {
             <div className="btn-style px-2 py-2 rounded-full">
             <FiSearch/>
             </div>
-            <Button otherclasses="btn-style" title="Shop"/>
-            <Button otherclasses="btn-style" title="Login"/>
+            <Button variant="primary" title="Shop"/>
+            <Button variant="secondary" title="Login"/>
           </div>
         </nav>
     </div>
@@ -59,8 +59,8 @@ export default function Navbar() {
               <li className="py-2"><a href="/contact" className="nav-items">Contact</a></li>
               <li className="py-2"><a href="/gifting" className="nav-items">Gifting</a></li>
               <li className="flex gap-2 pt-4">
-              <Button otherclasses="btn-style" title="Shop"/>
-            <Button otherclasses="btn-style" title="Login"/>
+              <Button otherclasses="" variant="primary"  title="Shop"/>
+            <Button otherclasses="" variant="secondary" title="Login"/>
               </li>
           </ul> 
           : null
