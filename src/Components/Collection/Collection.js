@@ -68,7 +68,8 @@ export default function Collection() {
           COLLECTION
         </div>
       </div>
-      <div className="flex lg:flex-row text-white  flex-col">
+
+      <div className="flex lg:flex-row  text-white  flex-col">
         <div className="lg:w-[60%] w-full ">
           <img
             src={collectionImages[slide].img}
@@ -76,6 +77,11 @@ export default function Collection() {
             className="ease-in-out delay-300 rounded-[50px]  transition w-full"
           />
         </div>
+        <progress
+          className="w-full my-8 block md:hidden collectionprogressbar"
+          max="100"
+          value={progress}
+        ></progress>
         <div className="lg:w-[40%] w-full space-y-9">
           <div className="bg-[#1b1713] flex flex-col justify-center h-full px-6  rounded-[50px] space-y-[30px]">
             <div>
@@ -100,7 +106,7 @@ export default function Collection() {
                 Meticulous Craftsmanship, And... Read More
               </div>
             </div>
-            <div className="collection-arrow-bg rounded-full flex justify-between -ml-[70px] w-[90px] h-[90px]">
+            <div className="collection-arrow-bg rounded-full  flex  lg:justify-between -ml-[70px] w-[90px] h-[90px]">
               <div
                 onClick={collectionSlidePlus}
                 className={` ${
@@ -132,34 +138,52 @@ export default function Collection() {
         </div>
       </div>
       <progress
-        className=" mt-6 w-full collectionprogressbar"
+        className="w-full my-8 collectionprogressbar hidden md:block"
         max="100"
         value={progress}
       ></progress>
-      <div className="flex justify-between">
-        <div>
+      <div className="flex lg:flex-row flex-col gap-6 md:gap-0 justify-between">
+        <div className="space-y-5 lg:space-y-0">
           <div className="flex items-end gap-3">
             <img src={icon1} className="max-w-[100px] max-h-[100px]" alt="" />
             <img src={icon2} className="max-w-[60px] max-h-[60px]" alt="" />
           </div>
-          <div className="max-w-[300px] text-white">
+          <div className="max-w-[300px] text-white mx-auto md:mx-0">
             <span>zales's combination of</span>
             <br /> statement and simplistics style help create a look that's as
             unique as you are
           </div>
         </div>
-        <div className="my-auto space-y-5 pt-4">
-          <div className="flex gap-4">
+        <div className="my-auto space-y-5 pt-4 hidden md:block">
+          <div className="flex flex-row  gap-4">
             <UnActiveBtn label="Classic Set" />
             <UnActiveBtn label="The Butterfly" />
             <UnActiveBtn label="Laurence Graff Signature" />
             <UnActiveBtn label="Wild Flower" />
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-end">
             <UnActiveBtn label="Icon" />
             <UnActiveBtn label="Main Jewellery" />
             <UnActiveBtn label="Gold Expression" />
             <UnActiveBtn label="Classic Set" active={true} />
+          </div>
+        </div>
+        <div className="block md:hidden space-y-5">
+          <div className="flex justify-start">
+            <UnActiveBtn label="Classic Set" active={true} />
+            <UnActiveBtn label="Wild Flower" />
+          </div>
+          <div className="flex justify-end">
+            <UnActiveBtn label="The Butterfly" />
+            <UnActiveBtn label="Gold Expression" />
+          </div>
+          <div className="flex justify-start">
+            <UnActiveBtn label="Laurence Graff Signature" />
+            <UnActiveBtn label="Icon" />
+          </div>
+          <div className="flex justify-end">
+            <UnActiveBtn label="Main Jewellery" />
+            <UnActiveBtn label="Classic Set" />
           </div>
         </div>
       </div>
