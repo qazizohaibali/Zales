@@ -7,6 +7,14 @@
 /* heading: Orbitron */
 /* text: Poppins */
 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+/* font-family: 'Michroma', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;200;300;400&display=swap');
+/* font-family: 'Ysabeau SC', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap');
+/* font-family: 'Krub', sans-serif; */
 body{
     background: rgb(18,14,11);
 background: linear-gradient(90deg, rgba(18,14,11,1) 50%, rgba(50,35,28,1) 100%);

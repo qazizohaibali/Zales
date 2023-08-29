@@ -96,7 +96,7 @@ export default function Home() {
                 <img
                   src={img}
                   alt=""
-                  className="h-[650px] grayscale-[30%] lg:max-h-[720px] object-cover w-full rounded-3xl "
+                  className="lg:h-[750px] grayscale-[30%] h-[640px] object-cover w-full rounded-3xl "
                 />
                 <div className="absolute top-[150px] lg:top-[170px] lg:pl-[80px]">
                   <div className="">
@@ -134,7 +134,7 @@ export default function Home() {
           })}
         </Slider>
       </div>
-       <SubHome/>
+       {/* <SubHome/> */}
     </div>
   );
 }
