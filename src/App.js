@@ -1,8 +1,9 @@
-import Collection from "./Components/Collection/Collection";
-import Cta from "./Components/Cta/Cta";
-import DiamondShop from "./Components/DiamondShop/DiamondShop";
-import Home from "./Components/Home/Home";
-import Navbar from "./Components/Navbar";
+// import Collection from "./Components/Collection/Collection";
+// import Cta from "./Components/Cta/Cta";
+// import DiamondShop from "./Components/DiamondShop/DiamondShop";
+// import Home from "./Components/Home/Home";
+// import Navbar from "./Components/Navbar";
+import SubCta from "./Components/SubCta/SubCta";
 import './app.css'
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Home/> */}
       {/* <DiamondShop/> */}
       {/* <Collection/> */}
-      <Cta/>
+      {/* <Cta/> */}
+      <SubCta></SubCta>
     </div>
   );
 }
