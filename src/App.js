@@ -3,7 +3,8 @@
 // import DiamondShop from "./Components/DiamondShop/DiamondShop";
 // import Home from "./Components/Home/Home";
 // import Navbar from "./Components/Navbar";
-import SubCta from "./Components/SubCta/SubCta";
+// import SubCta from "./Components/SubCta/SubCta";
+import Experience from "./Components/Experience/Experience";
 import './app.css'
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <DiamondShop/> */}
       {/* <Collection/> */}
       {/* <Cta/> */}
-      <SubCta></SubCta>
+      {/* <SubCta/> */}
+      <Experience/>
     </div>
   );
 }
