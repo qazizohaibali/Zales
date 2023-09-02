@@ -68,29 +68,75 @@ export default function Experience() {
     arrows: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
-    speed: 2000,
+    speed: 1000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+     
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const secsettings = {
     dots: false,
     arrows: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     rtl: true,
     autoplay: true,
-    speed: 2000,
+    speed: 1000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+     
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
     <>
       <div>
-        <div className="text-[white]">
+        <div className="text-[white] ">
           <div className="experience-heading text-[35px] md:text-[60px] lg:text-[100px]">
             Customers
           </div>
@@ -112,11 +158,11 @@ export default function Experience() {
               <div className="px-2">
                 <div className="flex experience-slider-border gap-4 rounded-full px-3 py-3 items-center">
                   {/* <div> */}
-                  <img src={img} className="w-48 h-48 rounded-full" alt="" />
+                  <img src={img} className="h-32 w-32 xl:w-48 xl:h-48 rounded-full object-contain" alt="" />
                   {/* </div> */}
                   <div className="space-y-3">
-                    <div>{review}</div>
-                    <div>{name}</div>
+                    <div className="review-text">{review}</div>
+                    <div className="italic font-bold">{name}</div>
                   </div>
                 </div>
               </div>
@@ -129,11 +175,11 @@ export default function Experience() {
               <div className="px-2">
                 <div className="flex experience-slider-border gap-4 rounded-full px-3 py-3 items-center">
                   {/* <div> */}
-                  <img src={img} className="w-48 h-48 rounded-full object-contain" alt="" />
+                  <img src={img} className="h-32 w-32 xl:w-48 xl:h-48 rounded-full object-contain" alt="" />
                   {/* </div> */}
-                  <div className="space-y-3">
-                    <div>{review}</div>
-                    <div>{name}</div>
+                  <div className="space-y-3 ">
+                    <div className="review-text">{review}</div>
+                    <div className="italic font-bold">{name}</div>
                   </div>
                 </div>
               </div>
