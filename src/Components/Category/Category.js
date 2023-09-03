@@ -20,10 +20,8 @@ import earring4 from "../../Assets/category/earrings/earring4.jpg";
 
 export default function Category() {
   const [active1, setActive1] = useState(false);
-  const [active2, setActive2] = useState(false);
+  const [active2, setActive2] = useState(true);
   const [active3, setActive3] = useState(false);
-
-  const [state, setState] = useState();
 
   const necklacedata = [
     { img: necklace1 },
@@ -49,9 +47,6 @@ export default function Category() {
       setActive1(true);
       setActive2(false);
       setActive3(false);
-    } else {
-      // setActive1(false);
-      // setActive2(true);
     }
   };
 
@@ -60,9 +55,6 @@ export default function Category() {
       setActive2(true);
       setActive1(false);
       setActive3(false);
-    } else {
-      // setActive2(false);
-      // setActive1(true);
     }
   };
 
@@ -86,14 +78,18 @@ export default function Category() {
         </div>
         <span className="hidden md:block"> View </span>
       </div>
-      <div className="category-slider">
-        <CardsSlider data={necklacedata} />
+      <div className="category-slider mt-3">
+        {active1 ? <CardsSlider data={earringsdata} /> : null}
+        {active2 ? <CardsSlider data={necklacedata} /> : null}
+        {active3 ? <CardsSlider data={ringsdata} /> : null}
       </div>
-      <div className="flex justify-evenly items-center">
+      <div className="grid grid-cols-3 text-center mt-8">
         <div
           onClick={onActive1}
-          className={`cursor-pointer ${
-            active1 ? " text-white" : " text-black"
+          className={`category-slide-title cursor-pointer flex items-center justify-center lg:text-[30px] md:text-[20px] text-[22px] text-white ${
+            active1
+              ? "lg:!text-[45px] md:!text-[30px] !text-[26px] font-bold opacity-100"
+              : "opacity-50"
           }`}
         >
           {" "}
@@ -101,15 +97,23 @@ export default function Category() {
         </div>
         <div
           onClick={onActive2}
-          className={`cursor-pointer ${active2 ? " text-white" : "text-black"}`}
+          className={`category-slide-title cursor-pointer flex items-center justify-center lg:text-[30px] md:text-[20px] text-[22px] text-white ${
+            active2
+              ? " lg:!text-[45px] md:!text-[30px] !text-[26px] font-bold opacity-100"
+              : "opacity-50"
+          }`}
         >
           Necklaces
         </div>
         <div
           onClick={onActive3}
-          className={`cursor-pointer ${active3 ? " text-white" : "text-black"}`}
+          className={`category-slide-title cursor-pointer flex items-center justify-center lg:text-[30px] md:text-[20px] text-[22px] text-white ${
+            active3
+              ? " lg:!text-[45px] md:!text-[30px] !text-[26px] font-bold opacity-100"
+              : "opacity-50"
+          }`}
         >
-          Engagments
+          Weddings
         </div>
       </div>
     </div>
