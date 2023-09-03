@@ -5,7 +5,8 @@
 // import Navbar from "./Components/Navbar";
 // import SubCta from "./Components/SubCta/SubCta";
 // import Experience from "./Components/Experience/Experience";
-import Category from './Components/Category/Category';
+// import Category from './Components/Category/Category';
+import OurWorks from './Components/OurWorks/OurWorks';
 import './app.css'
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Cta/> */}
       {/* <SubCta/> */}
       {/* <Experience/> */}
-      <Category/>
+      {/* <Category/> */}
+      <OurWorks/>
     </div>
   );
 }
