@@ -21,8 +21,8 @@ export default function CardsSlider({ data }) {
     >
       {data.map(({ img }) => {
         return (
-          <SwiperSlide>
-            <img src={img} alt="" />
+          <SwiperSlide className="">
+            <img src={img} className="w-full h-full object-cover" alt="" />
           </SwiperSlide>
         );
       })}

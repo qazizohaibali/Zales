@@ -19,7 +19,11 @@ import earring3 from "../../Assets/category/earrings/earring3.jpg";
 import earring4 from "../../Assets/category/earrings/earring4.jpg";
 
 export default function Category() {
-  const [show, setShow] = useState();
+  const [active1, setActive1] = useState(false);
+  const [active2, setActive2] = useState(false);
+  const [active3, setActive3] = useState(false);
+
+  const [state, setState] = useState();
 
   const necklacedata = [
     { img: necklace1 },
@@ -40,10 +44,35 @@ export default function Category() {
     { img: ring4 },
   ];
 
-  const onActive = () => {
-    setShow(true);
+  const onActive1 = () => {
+    if (!active1) {
+      setActive1(true);
+      setActive2(false);
+      setActive3(false);
+    } else {
+      // setActive1(false);
+      // setActive2(true);
+    }
   };
 
+  const onActive2 = () => {
+    if (!active2) {
+      setActive2(true);
+      setActive1(false);
+      setActive3(false);
+    } else {
+      // setActive2(false);
+      // setActive1(true);
+    }
+  };
+
+  const onActive3 = () => {
+    if (!active3) {
+      setActive3(true);
+      setActive1(false);
+      setActive2(false);
+    }
+  };
   return (
     <div>
       <div className="flex md:flex-row  md:items-center flex-col  category-heading text-white text-[48px] md:gap-5 lg:gap-10 md:text-[60px] lg:text-[80px] xl:text-[120px]">
@@ -60,10 +89,28 @@ export default function Category() {
       <div className="category-slider">
         <CardsSlider data={necklacedata} />
       </div>
-      <div>
-        <div onClick={onActive}>Earrings</div>
-        <div>Necklaces</div>
-        <div>Engagments</div>
+      <div className="flex justify-evenly items-center">
+        <div
+          onClick={onActive1}
+          className={`cursor-pointer ${
+            active1 ? " text-white" : " text-black"
+          }`}
+        >
+          {" "}
+          Earrings
+        </div>
+        <div
+          onClick={onActive2}
+          className={`cursor-pointer ${active2 ? " text-white" : "text-black"}`}
+        >
+          Necklaces
+        </div>
+        <div
+          onClick={onActive3}
+          className={`cursor-pointer ${active3 ? " text-white" : "text-black"}`}
+        >
+          Engagments
+        </div>
       </div>
     </div>
   );
