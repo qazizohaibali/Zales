@@ -35,30 +35,17 @@ html {
     zoom: 2.5;
   }
 }
-
-::-webkit-scrollbar {
-  width: 1.3rem;
+.ourwork-para{
+  /* font-family: 'Ysabeau SC', sans-serif; */
+  /* font-family: 'REM', sans-serif; */
+  font-family: 'Krub', sans-serif;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out;
+.ourwork-heading{
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 900;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
-
-body {
-  font-size: 1.6rem;
-  background: var(--bg);
-}
-
 .container {
   max-width: 124rem;
   padding: 4rem 1rem;
