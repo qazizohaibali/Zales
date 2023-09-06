@@ -87,7 +87,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className="relative">
       <div className="Home-Component mt-3 lg:mx-0 mx-3 ">
         <Slider {...settings}>
           {homeData.map(({ img, text, heading, barValue }, index) => {
@@ -111,12 +111,12 @@ export default function Home() {
                     <Button
                       title="Order Now"
                       variant="secondary"
-                      otherclasses="flex justify-center"
+                      otherclasses=""
                     />
                     <Button
                       title="See Collection"
                       variant="primary"
-                      otherclasses=" flex justify-center"
+                      otherclasses=" "
                     />
                   </div>
                   <div className="flex flex-col progress-bar justify-between items-end h-[220px] -mr-[75px] md:-mr-[450px] lg:-mr-[470px] -mt-[340px] ">
