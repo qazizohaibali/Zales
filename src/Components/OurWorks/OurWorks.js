@@ -58,7 +58,7 @@ export default function OurWorks() {
           OUR WORKS
         </div>
       </div>
-      <div className="relative owner_gallery_wrapper">
+      <div className="relative owner_gallery_wrapper px-3">
         <Swiper
           {...swiper}
           effect={"coverflow"}
@@ -66,8 +66,8 @@ export default function OurWorks() {
           centeredSlides={true}
           loop={true}
           coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
+            rotate: 5,
+            stretch: 5,
             depth: 100,
             modifier: 2.5,
           }}

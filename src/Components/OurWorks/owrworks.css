@@ -27,7 +27,7 @@
 
 @media only screen and (min-width: 1024px) {
   .swiper-slide > img {
-    height: 572px;
+    height: 580px;
     object-fit: cover;
   }
 }
@@ -36,5 +36,5 @@
   height: fit-content;
 }
 .owner_gallery_wrapper {
-  margin-top: -1050px;
+  margin-top: -1140px;
 }
