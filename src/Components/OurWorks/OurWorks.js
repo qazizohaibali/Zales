@@ -37,6 +37,10 @@ export default function OurWorks() {
     breakpoints: {
       320: {
         slidesPerView: 2,
+        coverflowEffect:{
+          stretch: 10,
+          // rotate:0
+        }
       },
       768: {
         slidesPerView: 3,
@@ -49,12 +53,12 @@ export default function OurWorks() {
 
   return (
     <div className=" ">
-      <div className="flex md:flex-row  md:items-center flex-col-reverse gap-3">
-        <div className="text-white italic flex items-end max-w-[133px] ourwork-para">
+      <div className="flex lg:flex-row  lg:items-center flex-col-reverse lg:gap-6 relative lg:translate-y-[70px]">
+        <div className="text-white italic flex items-end md:max-w-[400px]  lg:max-w-[210px] ourwork-para">
           Zales combination of statements and simplistic style helps create a
           look that's as unique as you are
         </div>
-        <div className="ourwork-heading text-white text-[48px] md:text-[60px] lg:text-[80px] xl:text-[90px]">
+        <div className="ourwork-heading text-white text-[48px] md:text-[55px] lg:text-[80px] xl:text-[100px]">
           OUR WORKS
         </div>
       </div>
@@ -62,7 +66,7 @@ export default function OurWorks() {
         <Swiper
           {...swiper}
           effect={"coverflow"}
-          grabCursor={true}
+          // grabCursor={true}
           centeredSlides={true}
           loop={true}
           coverflowEffect={{
