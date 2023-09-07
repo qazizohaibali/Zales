@@ -1,22 +1,29 @@
 .pri-btn-style:hover{
     background-color: white !important;
-    color: black !important;
+    color: #262626 !important;
+    font-weight: 500;
     cursor: pointer !important;
 
     
 }
 .pri-btn-style{
     border: 1px solid rgb(255, 255, 255);
+    font-weight: 500;
+font-family: 'Krub', sans-serif;
+    
 }
 .sec-btn-style:hover{
     /* background-color: white; */
 /* opacity: 0.5; */
     color:white !important;
-    /* border: 1px solid white; */
+    font-weight: 500;
     cursor: pointer !important;
     background-color: #444242 !important;
 }
 .sec-btn-style{
-    color:black;
+    color:#262626;
     background-color: white;
+    font-weight: 500;
+    font-family: 'Krub', sans-serif;
+
 }
