@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Icon from "../Icon/Icon";
 import model1 from "../../Assets/models/model-1.jpg";
 import model2 from "../../Assets/models/model-2.jpg";
 import model3 from "../../Assets/models/model-3.jpg";
 import ring from "../../Assets/ring.png";
 
-import right from "../../Assets/icons/right-arow.svg";
-import left from "../../Assets/icons/left-arrow.svg";
+import leftarrow from "../../Assets/icons/left-arrow.svg";
+import rightarrow from "../../Assets/icons/right-arow.svg";
 
 const models = [{ img: model1 }, { img: model2 }, { img: model3 }];
 
@@ -23,24 +22,16 @@ const ringsdata = [
 ];
 
 export default function SubHero() {
-  const [check, setCheck] = useState(0);
+  const [slide, setSlide] = useState(0);
+  const [btn, setBtn] = useState();
 
-  const checker = () => {
-    if (check < 4) {
-      setCheck((prev) => {
-        return prev + 1;
-      });
-      console.log(check);
-    }
+  const collectionSlidePlus = () => {
+    if (slide < 4) setSlide(slide + 1);
+    if (slide === 4) setBtn(true);
   };
-
-  const prev_checker = () => {
-    if (check > 0) {
-      setCheck((prev) => {
-        return prev - 1;
-      });
-      console.log(check);
-    }
+  const collectionSlideMinus = () => {
+    if (slide > 0) setSlide(slide - 1);
+    if (slide === 0) setBtn(false);
   };
 
   return (
@@ -52,15 +43,22 @@ export default function SubHero() {
         >
           <div className="bg-[#926a55] flex items-center justify-center rounded-full h-24 w-24 lg:h-36 lg:w-36">
             <div className="backdrop-blur-[20px] rounded-full translate-x-[42px] lg:translate-x-[70px] opacity-100">
-              {check < 4 ? (
-                <button onClick={checker}>
-                  <Icon icon={right}></Icon>
-                </button>
-              ) : (
-                <button onClick={prev_checker}>
-                  <Icon icon={left}></Icon>
-                </button>
-              )}
+              <div
+                onClick={collectionSlidePlus}
+                className={` ${
+                  btn ? "hidden" : "block mx-auto my-auto cursor-pointer"
+                }`}
+              >
+                <img src={rightarrow} alt="" className="w-10" />
+              </div>
+              <div
+                onClick={collectionSlideMinus}
+                className={` ${
+                  btn ? "block mx-auto my-auto cursor-pointer" : "hidden"
+                }`}
+              >
+                <img src={leftarrow} alt="" className="w-10" />
+              </div>
             </div>
           </div>
         </div>
@@ -72,8 +70,8 @@ export default function SubHero() {
           />
         </div>
         <div className="">
-          {check === 0 ? <h2>{ringsdata[check].title}</h2> : null}
-          <p>{ringsdata[check].step}</p>
+          {slide === 0 ? <h2>{ringsdata[slide].title}</h2> : null}
+          <p>{ringsdata[slide].step}</p>
         </div>
       </div>
       <div className="max-w-[500px] w-full bg-[#926a55] rounded-3xl p-[30px] ">
