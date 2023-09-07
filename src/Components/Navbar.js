@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="max-w-[1400px] mx-auto lg:px-0 px-3 hidden lg:block desktop-nav relative">
+      <div className="max-w-[1400px] sticky top-0 mx-auto lg:px-0 px-3 hidden lg:block desktop-nav z-50">
         <nav className="flex justify-between rounded-[40px]  bg-[#262626] text-white py-5 px-6 my-nav">
           <div className="flex lg:gap-[25px] xl:gap-[80px] items-center">
             <div>

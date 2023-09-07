@@ -1,0 +1,27 @@
+.sub-hero-model-images :nth-child(2) {
+  transform: translateX(-1rem);
+}
+.sub-hero-model-images :nth-child(3) {
+  transform: translateX(-2rem);
+}
+
+.subhero-ring-step {
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.subhero-ring-title {
+  font-family: "Michroma", sans-serif;
+  font-weight: 900;
+}
+.subhero-count-heading{
+    /* font-family: 'Ysabeau SC', sans-serif; */
+    /* font-family: 'Michroma', sans-serif; */
+    /* font-family: 'REM', sans-serif; */
+font-weight: 700;
+    font-family: 'Krub', sans-serif;
+}
+.subhero-count{
+    font-family: 'Krub', sans-serif;
+font-weight: 700;
+}
+
