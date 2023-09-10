@@ -66,7 +66,7 @@ export default function Category() {
     }
   };
   return (
-    <div>
+    <div className="py-[80px]">
       <div className="flex md:flex-row  md:items-center flex-col  category-heading text-white text-[48px] md:gap-5 lg:gap-10 md:text-[60px] lg:text-[80px] xl:text-[120px]">
         <span> Category </span>
         <span className="block md:hidden"> View </span>
@@ -78,7 +78,7 @@ export default function Category() {
         </div>
         <span className="hidden md:block"> View </span>
       </div>
-      <div className="category-slider mt-3">
+      <div className="category-slider mt-6 ">
         {active1 ? <CardsSlider data={earringsdata} /> : null}
         {active2 ? <CardsSlider data={necklacedata} /> : null}
         {active3 ? <CardsSlider data={ringsdata} /> : null}
