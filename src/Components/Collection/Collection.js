@@ -103,8 +103,8 @@ export default function Collection() {
           value={progress}
         ></progress>
         <div className="lg:w-[40%] w-full space-y-9">
-          <div className="bg-[#1b1713] flex flex-col justify-center h-full px-6  rounded-[50px] space-y-[30px]">
-            <div className="pt-4 lg:pt-0">
+          <div className="bg-[#1b1713] flex flex-col justify-center h-full px-6 rounded-[50px] space-y-[30px]">
+            <div className="pt-4 lg:pt-0 translate-y-4">
               <div className="flex gap-2 items-center">
                 <img src={icon} className="max-w-[50px] max-h-[50px]" alt="" />
                 <div className="collection-date text-[18px]">
@@ -144,7 +144,7 @@ export default function Collection() {
                 <img src={leftarrow} alt="" className="w-10" />
               </div>
             </div>
-            <div className="pb-4 lg:pb-0 collection-lines text-[18px] font-medium">
+            <div className="pb-4 lg:pb-0 -translate-y-4 collection-lines text-[18px] font-medium">
               <div className="flex items-center gap-2">
                 <img src={icon} className="max-w-[50px] max-h-[50px]" alt="" />
                 <div>Expert Analysis</div>

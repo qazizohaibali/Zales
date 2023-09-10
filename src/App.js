@@ -3,8 +3,8 @@ import Home from "./Components/Home/Home";
 // import DiamondShop from "./Components/DiamondShop/DiamondShop";
 import Collection from "./Components/Collection/Collection";
 import Experience from "./Components/Experience/Experience";
+import SubCta from "./Components/SubCta/SubCta";
 // import Cta from "./Components/Cta/Cta";
-// import SubCta from "./Components/SubCta/SubCta";
 // import Category from './Components/Category/Category';
 // import OurWorks from './Components/OurWorks/OurWorks';
 import './app.css'
@@ -17,9 +17,9 @@ function App() {
       <Collection/>
       {/* <OurWorks/> */}
       <Experience/>
-      {/* <Category/> */}
+      <SubCta/>
       {/* <Cta/> */}
-      {/* <SubCta/> */}
+      {/* <Category/> */}
     </div>
   );
 }
