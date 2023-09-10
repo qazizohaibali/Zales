@@ -158,7 +158,7 @@ export default function Experience() {
               <div className="px-2">
                 <div className="flex experience-slider-border gap-4 rounded-full px-3 py-3 items-center">
                   {/* <div> */}
-                  <img src={img} className="h-32 w-32 xl:w-48 xl:h-48 rounded-full object-contain" alt="" />
+                  <img src={img} className="h-32 w-32 lg:h-28 lg:w-28  xl:w-48 xl:h-48 rounded-full object-contain" alt="" />
                   {/* </div> */}
                   <div className="space-y-3">
                     <div className="review-text">{review}</div>

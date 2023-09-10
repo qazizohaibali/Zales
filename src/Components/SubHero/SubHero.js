@@ -16,7 +16,7 @@ const ringsdata = [
   {
     step: "Design Your Own Gemstone Ring ",
   },
-  { step: "(1) Pick gemstone and ring base" },
+  { step: "(1) Pick your gemstone and ring base" },
   { step: "(2) Securely set the dazzling gemstone" },
   { step: "(3) Finalize for elegant and chic design" },
   { step: "(4) Capture images, showcase its beauty" },
