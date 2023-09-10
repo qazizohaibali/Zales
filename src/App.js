@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home/Home";
-import DiamondShop from "./Components/DiamondShop/DiamondShop";
-// import Collection from "./Components/Collection/Collection";
+// import DiamondShop from "./Components/DiamondShop/DiamondShop";
+import Collection from "./Components/Collection/Collection";
 // import Cta from "./Components/Cta/Cta";
 // import SubCta from "./Components/SubCta/SubCta";
 // import Experience from "./Components/Experience/Experience";
@@ -13,13 +13,13 @@ function App() {
     <div className="App max-w-[1400px] py-3 app-bg rounded-3xl mx-auto">
       <Navbar/>
       <Home/>
-      <DiamondShop/>
-      {/* <Collection/> */}
-      {/* <Cta/> */}
-      {/* <SubCta/> */}
+      {/* <DiamondShop/> */}
+      <Collection/>
+      {/* <OurWorks/> */}
       {/* <Experience/> */}
       {/* <Category/> */}
-      {/* <OurWorks/> */}
+      {/* <Cta/> */}
+      {/* <SubCta/> */}
     </div>
   );
 }

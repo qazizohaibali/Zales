@@ -5,40 +5,60 @@
   color: white;
 }
 
-.collection-para{
-    font-family: 'Ysabeau SC', sans-serif; 
-    font-style: italic;
-    color: white;
-    text-transform: capitalize ;
+.collection-para {
+  font-family: "Ysabeau SC", sans-serif;
+  font-style: italic;
+  color: white;
+  text-transform: capitalize;
 }
-@media only screen and (max-width:425px) {
-  .collection-heading{
-  letter-spacing: 3px;
-  font-size: 30px !important;
+.collection-date {
+}
+.collection-sub-heading {
+
+  font-family: 'Michroma', sans-serif;
+  font-weight: 700;
+}
+.collection-sub-title {
+  font-family: 'Ysabeau SC', sans-serif;
+  font-weight: 700;
+}
+.collection-sub-para {
+  /* font-family: 'REM', sans-serif; */
+  font-family: 'Krub', sans-serif;
+}
+.collection-lines {
+  font-family: 'Krub', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+  .collection-heading {
+    letter-spacing: 3px;
+    font-size: 30px !important;
   }
 }
 
-.collection-arrow-bg{
- backdrop-filter: blur(1.2rem) ;
- border: 1px solid rgb(34, 32, 32);
+.collection-arrow-bg {
+  backdrop-filter: blur(1.2rem);
+  border: 1px solid rgb(34, 32, 32);
 }
 
 .collectionprogressbar {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
   /* width:%; */
-  height:8px;
+  height: 8px;
   /* border:1px solid #ccc; */
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 0px !important;
-  
 
   &::-webkit-progress-bar {
-      background:#ffffff;
+    background: #ffffff;
   }
   &::-webkit-progress-value {
-      background:#1b1713;
+    background: #1b1713;
   }
   &::-moz-progress-bar {
-      /* background:#291307; */
+    /* background:#291307; */
   }
 }
