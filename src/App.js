@@ -2,9 +2,9 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home/Home";
 // import DiamondShop from "./Components/DiamondShop/DiamondShop";
 import Collection from "./Components/Collection/Collection";
+import Experience from "./Components/Experience/Experience";
 // import Cta from "./Components/Cta/Cta";
 // import SubCta from "./Components/SubCta/SubCta";
-// import Experience from "./Components/Experience/Experience";
 // import Category from './Components/Category/Category';
 // import OurWorks from './Components/OurWorks/OurWorks';
 import './app.css'
@@ -16,7 +16,7 @@ function App() {
       {/* <DiamondShop/> */}
       <Collection/>
       {/* <OurWorks/> */}
-      {/* <Experience/> */}
+      <Experience/>
       {/* <Category/> */}
       {/* <Cta/> */}
       {/* <SubCta/> */}
