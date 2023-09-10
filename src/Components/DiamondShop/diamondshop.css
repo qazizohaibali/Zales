@@ -13,24 +13,52 @@
   color: white;
 }
 
-@media only screen and (max-width:320px) {
-  .diamond-heading{
+@media only screen and (max-width: 320px) {
+  .diamond-heading {
     font-size: 30px !important;
   }
-  .diamond-buttons{
+  .diamond-buttons {
     margin-top: -90px !important;
   }
 }
 
-.slide-title{
-  font-family: 'Krub', sans-serif;
+.slide-title {
+  font-family: "Krub", sans-serif;
   color: white;
   font-weight: 500;
 }
 
-.diamond-para{
-  font-family: 'Ysabeau SC', sans-serif; 
+.diamond-para {
+  font-family: "Ysabeau SC", sans-serif;
   font-style: italic;
   color: white;
+}
 
+.swiper-slide {
+  max-width: 560px;
+  max-height: 572px;
+  position: relative;
+}
+
+.swiper-slide-shadow-left {
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ) !important;
+}
+.swiper-slide-shadow-right {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0.5)
+  ) !important;
+}
+
+.owner_gallery_wrapper > div > div {
+  height: fit-content;
+}
+
+.gallery-section-button > button > svg {
+  display: none !important;
 }

@@ -5,11 +5,11 @@ import "./cta.css";
 
 export default function Cta() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-[80px] pb-[130px] lg:pt-[100px] lg:pb-[180px]">
       <div className="mx-auto">
         <img
           src={bg}
-          className="relative min-h-[400px] max-h-[600px] object-cover lg:w-[1050px] filter brightness-[0.3]"
+          className="relative  min-h-[400px] max-h-[600px] object-cover lg:w-[1050px] rounded-2xl filter brightness-[0.3]"
           alt=""
         />
         <div className="relative -mt-[370px] md:-mt-[440px] lg:-mt-[540px]">
