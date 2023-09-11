@@ -47,7 +47,7 @@ export default function SubHero() {
       <div className="max-w-[900px] w-full flex flex-col-reverse gap-5 py-5 items-center md:flex-row md:items-center bg-[#1d1d1d] rounded-3xl">
         <div className="flex">
           <div
-            className="flex items-center z-20 bg-[#1d1d1d] z-[1000]"
+            className="flex items-center z-20 bg-[#1d1d1d] "
             style={{ borderRadius: "1.5rem 0rem 0rem 1.5rem" }}
           >
             <div className="bg-[#926a55] flex  items-center justify-center rounded-full h-24 w-24 lg:h-36 lg:w-36">
