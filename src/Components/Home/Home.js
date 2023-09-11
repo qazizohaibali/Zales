@@ -52,7 +52,7 @@ export default function Home() {
     return (
       <button
         onClick={onClick}
-        className="absolute bottom-[20px] lg:bottom-[80px] px-2 py-1 rotate-180 z-[1000] icon_border right-[53%] lg:right-[11%] "
+        className="absolute bottom-[20px] lg:bottom-[80px] px-2 py-1 rotate-180 z-10 icon_border right-[53%] lg:right-[11%] "
       >
         <Icon otherclasses="h-10" icon={arrowicon} />
       </button>
@@ -64,7 +64,7 @@ export default function Home() {
     return (
       <button
         onClick={onClick}
-        className="absolute bottom-[20px]  lg:bottom-[80px] px-2 py-1 icon_border z-[1000] left-[53%] lg:left-[90%] "
+        className="absolute bottom-[20px] z-10 lg:bottom-[80px] px-2 py-1 icon_border  left-[53%] lg:left-[90%] "
       >
         <Icon otherclasses="h-10" icon={arrowicon} />
       </button>

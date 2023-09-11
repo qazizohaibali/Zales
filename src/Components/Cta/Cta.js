@@ -23,7 +23,7 @@ export default function Cta() {
             <Button
               variant="primary"
               title="Order Now!"
-              otherclasses="py-2 mx-auto md:mt-12 italic max-w-[140px]"
+              otherclasses="py-2 mx-auto md:mt-12 italic max-w-[200px] text-center"
             ></Button>
           </div>
         </div>

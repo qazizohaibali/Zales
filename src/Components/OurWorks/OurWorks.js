@@ -36,14 +36,13 @@ export default function OurWorks() {
   const swiper = {
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         coverflowEffect:{
           stretch: 10,
-          // rotate:0
         }
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1024: {
         slidesPerView: 3,
@@ -62,7 +61,7 @@ export default function OurWorks() {
           OUR WORKS
         </div>
       </div>
-      <div className="relative owner_gallery_wrapper px-3">
+      <div className="owner_gallery_wrapper px-3">
         <Swiper
           {...swiper}
           effect={"coverflow"}

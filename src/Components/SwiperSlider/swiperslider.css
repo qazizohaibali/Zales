@@ -1,0 +1,28 @@
+.swiper-slide {
+  max-width: 560px;
+  max-height: 572px;
+  position: relative;
+}
+
+.swiper-slide-shadow-left {
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ) !important;
+}
+.swiper-slide-shadow-right {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0.5)
+  ) !important;
+}
+
+.owner_gallery_wrapper > div > div {
+  height: fit-content;
+}
+
+.gallery-section-button > button > svg {
+  display: none !important;
+}

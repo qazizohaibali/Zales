@@ -49,7 +49,7 @@ export default function SubCta() {
         <div className="footer-line h-[2px]"></div>
         <div className="md:flex-row flex-col flex md:items-center md:justify-between mt-4">
           <div className="md:order-1 mt-4 flex flex-col items-center md:mx-0 order-2 text-white">
-            <div className="">Develoed by <span className="footer-name opacity-50"> Qazi Zohaib Ali</span></div>
+            <div className=""><span className="opacity-60">Develoed by</span> <span className="footer-name"> Qazi Zohaib Ali</span></div>
             <div className="opacity-60"> @2023, All Rights Reserved.</div>
           </div>
           <div className="flex justify-evenly gap-2 md:order-2 order-1">

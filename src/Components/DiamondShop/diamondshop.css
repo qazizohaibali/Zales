@@ -1,11 +1,3 @@
-.slide-border {
-  border: 1px solid rgb(103, 103, 103);
-  /* box-shadow: 1px 1px 50px rgb(105, 103, 103); */
-}
-.img-shadow {
-  filter: drop-shadow(2px 2px 50px rgb(103, 103, 103));
-}
-
 .diamond-heading {
   font-weight: bolder;
   font-family: "Michroma", sans-serif;
@@ -23,8 +15,9 @@
 }
 
 .slide-title {
-  font-family: "Krub", sans-serif;
+  font-family: 'Ysabeau SC', sans-serif;
   color: white;
+  opacity: 0.5;
   font-weight: 500;
 }
 
@@ -35,8 +28,6 @@
 }
 
 .swiper-slide {
-  max-width: 560px;
-  max-height: 572px;
   position: relative;
 }
 
@@ -61,4 +52,23 @@
 
 .gallery-section-button > button > svg {
   display: none !important;
+}
+
+.slick-current {
+  display: flex;
+  align-items: center;
+}
+.slick-current > div > div .slide-border > img {
+  filter: drop-shadow(1px 1px 60px rgb(153, 152, 152));
+  border: 1px solid rgb(103, 103, 103);
+  border-radius: 50%;
+  height: 250px !important;
+  width: 250px !important;
+}
+.slick-current > div > div .slide-title {
+  margin-top: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  opacity: 1;  
+font-size: 30px;
 }
