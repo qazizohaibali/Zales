@@ -78,32 +78,32 @@ export default function Navbar() {
           {menu ? (
             <ul className="px-4 py-5 scale-up-tr mt-3 bg-black rounded-3xl flex-col">
               <li className="py-2">
-                <a href="/home" className="nav-items">
+                <a href="/home" className="nav-items max-w-max relative navbarunderline">
                   Home
                 </a>
               </li>
               <li className="py-2">
-                <a href="/new" className="nav-items">
+                <a href="/new" className="nav-items max-w-max relative navbarunderline">
                   New
                 </a>
               </li>
               <li className="py-2">
-                <a href="/products" className="nav-items">
+                <a href="/products" className="nav-items max-w-max relative navbarunderline">
                   Products
                 </a>
               </li>
               <li className="py-2">
-                <a href="/ourstory" className="nav-items">
+                <a href="/ourstory" className="nav-items max-w-max relative navbarunderline">
                   Our Story
                 </a>
               </li>
               <li className="py-2">
-                <a href="/contact" className="nav-items">
+                <a href="/contact" className="nav-items max-w-max relative navbarunderline">
                   Contact
                 </a>
               </li>
               <li className="py-2">
-                <a href="/gifting" className="nav-items">
+                <a href="/gifting" className="nav-items max-w-max relative navbarunderline">
                   Gifting
                 </a>
               </li>
