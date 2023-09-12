@@ -12,6 +12,9 @@ import deskline from "../../Assets/diamonds/diamond-desk-line.svg";
 import mobline from "../../Assets/diamonds/diamond-mob-line.svg";
 import "./diamondshop.css";
 
+import arrowicon from "../../Assets/icons/L-Next-Arrow.svg";
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -31,12 +34,40 @@ export default function DiamondShop() {
     { img: pear, title: "Pear" },
   ];
 
+  const PrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <button
+        onClick={onClick}
+        className="!absolute !top-[370px] lg:!top-[150px] !left-4 lg:!-left-16 rotate-180 h-10 w-10 hover:border-[1px] hover:border-white pl-2 rounded-full"
+      >
+        <Icon otherclasses="h-10 !hover:fill-black" icon={arrowicon} />
+      </button>
+    );
+  };
+
+  const NextArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <button
+        onClick={onClick}
+        className="!absolute !top-[370px] lg:!top-[150px] !right-4 lg:!-right-16 h-10 w-10 hover:border-[1px] hover:border-white pl-2 rounded-full"
+      >
+        <Icon otherclasses="h-10" icon={arrowicon} />
+      </button>
+    );
+  };
+
+
   const settings = {
     arrows: false,
     infinite: true,
+    arrows: true,
     centerMode: true,
     slidesToShow: 3,
     speed: 500,
+    nextArrow:<NextArrow/>,
+    prevArrow:<PrevArrow/>,
     responsive: [
       {
         breakpoint: 600,
@@ -87,16 +118,7 @@ export default function DiamondShop() {
         </div>
       </div>
       <div className="diamond-slider ">
-        <img
-          src={deskline}
-          className="hidden md:block mx-auto  mt-52 w-full px-[50px]"
-          alt=""
-        />
-        <img src={mobline} className="block md:hidden px-4 mt-[12rem]" alt="" />
-        <Slider
-          {...settings}
-          className="xl:-mt-32 -mt-[6rem] md:-mt-[5.5rem] lg:-mt-[6.5rem] mx-auto max-w-[1250px]"
-        >
+        <Slider {...settings} className="mt-[100px] mx-auto max-w-[1140px]">
           {sliderImages.map(({ img, title }) => {
             return (
               <div className="text-center ">
