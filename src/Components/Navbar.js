@@ -29,32 +29,32 @@ export default function Navbar() {
             </div>
             <ul className="flex items-center gap-[15px]">
               <li>
-                <a href="/home" className="nav-items">
+                <a href="/home" className="nav-items max-w-max relative navbarunderline">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/new" className="nav-items">
+                <a href="/new" className="nav-items max-w-max relative navbarunderline">
                   New
                 </a>
               </li>
               <li>
-                <a href="/products" className="nav-items">
+                <a href="/products" className="nav-items max-w-max relative navbarunderline">
                   Products
                 </a>
               </li>
               <li>
-                <a href="/ourstory" className="nav-items">
+                <a href="/ourstory" className="nav-items max-w-max relative navbarunderline">
                   Our Story
                 </a>
               </li>
               <li>
-                <a href="/contact" className="nav-items">
+                <a href="/contact" className="nav-items max-w-max relative navbarunderline">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="/gifting" className="nav-items">
+                <a href="/gifting" className="nav-items max-w-max relative navbarunderline">
                   Gifting
                 </a>
               </li>
